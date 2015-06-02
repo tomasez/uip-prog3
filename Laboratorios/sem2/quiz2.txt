@@ -1,0 +1,7 @@
+Explique cuales son los modos de programacion de Python
+
+Interactivo:
+	    Este modo comprueba el codigo de manera automatica una vez escrito.
+
+Normal:
+	Este modo revisa linea por linea todo el programa.
