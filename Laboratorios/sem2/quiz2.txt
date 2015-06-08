@@ -5,3 +5,6 @@ Interactivo:
 
 Normal:
 	Este modo revisa linea por linea todo el programa.
+	
+Correccion del profesor:
+			"Ambos modos interpretan línea a línea. La diferencia mayor es que el modo normal necesita tener un fichero con extensión .py, mientras que el modo interactivo da realimentación en tiempo real apenas uno escribe una sentencia."
