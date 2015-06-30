@@ -1,5 +1,5 @@
 import os
-print("Bienvenido al supermercado ABC!")
+print("Bienvenido a TuAgenda!")
 opcion=0;
 agenda={}
 while opcion != "5":
