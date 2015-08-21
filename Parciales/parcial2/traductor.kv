@@ -1,0 +1,63 @@
+ScreenManager:
+	Screen:
+		name: 'principal'
+		BoxLayout:
+			orientation: 'vertical'
+			GridLayout:
+				cols: 2
+				Label:
+					text: 'Ingles'
+					font_name: 'consola.ttf'
+					color: (255,255,0,1)
+					background_color: (105,105,105,0.8)
+				TextInput:
+					id: traducirIngles
+					multiline: False
+					font_name: 'consola.ttf'
+					color: (255,255,0,0.8)
+					background_color: (105,105,105,0.8)
+			Button:
+				text: 'Traducir'
+				font_name: 'consola.ttf'
+				background_color: (1,2,3,4)
+			GridLayout:
+				cols: 2
+				Label:
+					text: 'Espanol'
+					font_name: 'consola.ttf'
+					color: (255,255,0,1)
+					background_color: (105,105,105,0.8)
+				TextInput:
+					id: traducirEspanol
+					multiline: False
+					font_name: 'consola.ttf'
+					color: (255,255,0,0.8)
+					background_color: (105,105,105,0.8)
+			Button:
+				text: 'Traducir'
+				font_name: 'consola.ttf'
+				background_color: (1,2,3,4)
+			Button:
+				text: 'Datos del creador'
+				font_name: 'consola.ttf'
+				on_press: root.current = 'datos'
+	Screen:
+		name: 'datos'
+		BoxLayout:
+			orientation: 'horizontal'
+			GridLayout:
+				cols: 2
+				rows: 1
+				Label:
+					text: 'Creador: Tomas Gutierrez\nGracias por probar la prePreAlpha :D!'
+				Image:
+					canvas:
+						Rectangle:
+							pos: self.pos
+							size:self.size
+							source: '2015_07_07_0000 (2).jpg'
+				Button:
+					pos: -1,-1
+					size: 402,110
+					text: 'Volver'
+					on_press: root.current = "principal"
